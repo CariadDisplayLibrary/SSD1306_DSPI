@@ -1,0 +1,21 @@
+Source: libdisplaycore-driver-ssd1306-dspi
+Section: libraries
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: libdisplaycore-driver-ssd1306-dspi
+Section: libraries
+Architecture: all
+XBSC-Group: DisplayCore
+XBSC-Subgroup: Drivers
+Depends: libdisplaycore-core, libdisplaycore-driver-ssd1306, libdspi-chipkit
+Provides: SSD1306-UL-DSPI.h
+Description: SSD1306 DSPI Interface
+ This is a generic 128x64 SSD1306 DSPI driver.
+ .
+ This library requires the SSD1306 "base" library to work.
+ .
+ For the 128x32 displays as used on the Digilent PMOD and Basic IO
+ Shield use the SSD1306_PMOD driver instead.
